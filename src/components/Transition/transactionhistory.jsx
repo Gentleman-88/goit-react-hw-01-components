@@ -1,7 +1,9 @@
+import css from './Transition.module.css'
+
 export const TransactionHistory = ({ items }) => {
     return (
-        <table className="transaction-history">
-            <thead>
+        <table className={css.transaction_history}>
+            <thead className={css.transaction_types}>
                 <tr>
                     <th>Type</th>
                     <th>Amount</th>
@@ -19,5 +21,5 @@ export const TransactionHistory = ({ items }) => {
                     ))}
             </tbody>
         </table>
-    );
+    )
 }
